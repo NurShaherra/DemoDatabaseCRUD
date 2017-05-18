@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a15031777.demodatabasecrud.MainActivity">
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etContent"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_centerHorizontal="true"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/btnRetrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnEdit"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="Retrieve" />
+
+    <TextView
+        android:id="@+id/tvDBContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnRetrieve"
+        android:layout_alignLeft="@+id/btnAdd"
+        android:layout_alignRight="@+id/btnRetrieve"
+        android:layout_alignStart="@+id/btnAdd"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_bright" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/tvDBContent"
+        android:layout_alignStart="@+id/tvDBContent"
+        android:layout_below="@+id/tvDBContent"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
